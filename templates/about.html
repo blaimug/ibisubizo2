@@ -1,0 +1,123 @@
+
+{% extends "public/base.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+	<section class="job-bg page job-details-page">
+		<div class="container">
+			<div class="breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="index.html">Ahabanza</a></li>
+					<li><a href="job-list.html">Amakuru</a></li>
+					<li>Abo turi bo</li>
+				</ol><!-- breadcrumb -->						
+				<h2 class="title">Abo Turi Bo</h2>
+			</div><!-- breadcrumb -->
+
+			<style>
+			.breadcrumb *{
+				color:#000 !important;
+			}
+			.client-side{
+				width:100% !important;
+				float:left;
+				border-radius: 0 !important;
+				margin:0 !important;
+				border-bottom:1px solid #bdc3c7;
+			}
+			.admin-side{
+				width:100% !important;
+				float:right;
+				border-radius: 0 !important;
+				background:#e4f1fe;
+				margin:0 !important;
+			}
+			.client-side p {
+				font-size:14px;
+				font-family: 'Segoe UI', sans-serif;
+			}
+			.admin-side p {
+				font-size:14px;
+				font-family: 'Segoe UI', sans-serif;
+			}
+			.attachement{
+				background:#fff;
+				border:1px solid #ccc;
+				padding:0;
+				margin:0;
+				border-radius:2px;
+			}
+			.picture-holder{
+				border-radius:10px;
+				border:0;
+				height:200px;
+				margin-bottom:15px;
+				background-size:cover;
+			}
+			.reply textarea {
+				border:2px solid #c5eff7;
+				border-radius:3px;
+				transition:300 ms;
+			}
+			.reply textarea:focus {
+				border:2px solid #81cfe0;
+			}
+			.status {
+				color:#336e7b;
+				padding-left:0;
+			}
+			.admin-replies{
+				margin:10px 0px;
+				padding:0;
+			}
+			.admin-replies .reply{
+				background:#fff;
+				padding:13px 10px;
+				float:right;
+				width:90%;
+				border-radius:6px;
+				margin:2px 0;
+				font-family:'Segoe UI', Arial, sans-serif;
+			}
+			.reply-status {
+				color:#7f8c8d;
+			}
+			.ikibazo-side-widget {
+				background:#fff;
+				padding:10px;
+				margin:10px 0;
+			}
+			</style>
+			<div class="job-details">				
+				<div class="job-details-info">
+					<div class="row">
+						<div class="col-sm-9">
+							<div class="section job-description client-side">
+								<div class="description-info">
+									<p><span>Mutabazi.com ni urubuga rwashyizweho n’ikigo Thousand Skills Ltd, ikigo gitanga serivisi zo gushakira ibibazo ibisubizo hifashishijwe ubuhanga n’ikoranabuhanga (science and technology). <br><br>Urubuga mutabazi.com rworohereza buri wese uhuye n’ikibazo kimubanganira mu buzima bwe bwa buri munsi, cyaba icyo afite ku giti cye cyangwa se icyo ahuriyeho n’abandi, kukigeza ku nzobere kugira ngo zimuhe serivisi zo kugishakira igisubizo nyacyo hifashishijwe ubuhanga n’ikoranabuhanga, ubumenyi n’ubumenyingiro.</span></p>
+									<div>
+									</div>
+								</div>					
+							</div>							
+						</div>
+						<!-- Other Comments -->
+						<div class="col-md-3">
+							<h4><i class="fas fa-fire"></i> Ibibazo byabajijwe</h4>
+							<div class="ikibazo-side-widget">
+								<h5 class="title">Nabuze akazi kandi ndakennye</h5>
+								<p>Ndakennye kandi nabuze akazi kandi ubuzima ntago bworoshye lorem ipsum dolor sit ammet... <a href="#">Komeza usome</a></p>
+							</div>
+							<div class="ikibazo-side-widget">
+								<h5 class="title">Nabuze akazi kandi ndakennye</h5>
+								<p>Ndakennye kandi nabuze akazi kandi ubuzima ntago bworoshye lorem ipsum dolor sit ammet... <a href="#">Komeza usome</a></p>
+							</div>
+						</div>
+					</div><!-- row -->					
+				</div><!-- job-details-info -->				
+			</div><!-- job-details -->
+		</div><!-- container -->
+	</section><!-- job-details-page -->
+	
+{% endblock %}

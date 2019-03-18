@@ -1,0 +1,189 @@
+
+{% extends "public/base.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+	<section class="job-bg page job-details-page">
+		<div class="container">
+			<div class="breadcrumb-section">
+				<ol class="breadcrumb">
+					<li><a href="index.html">Ahabanza</a></li>
+					<li><a href="job-list.html">Ibibazo</a></li>
+					<li>Rusange</li>
+				</ol><!-- breadcrumb -->						
+				<h2 class="title">Hashize igihe mbuze akazi <a href="#" class="btn btn-primary btn-special-small"><i class="fas fa-users"></i> Twihuze</a> </h2>
+			</div><!-- breadcrumb -->
+
+			<div class="banner-form banner-form-full job-list-form clearfix col-md-9">
+				<form action="#">
+					<input type="text" class="form-control" placeholder="Shakisha...">
+					<button type="submit" class="btn btn-primary" value="Search">Shakisha</button>
+				</form>
+			</div><!-- banner-form -->
+			<style>
+			.breadcrumb *{
+				color:#000 !important;
+			}
+			.client-side{
+				width:100% !important;
+				float:left;
+				border-radius: 0 !important;
+				margin:0 !important;
+				border-bottom:1px solid #bdc3c7;
+			}
+			.admin-side{
+				width:100% !important;
+				float:right;
+				border-radius: 0 !important;
+				background:#e4f1fe;
+				margin:0 !important;
+			}
+			.client-side p {
+				font-size:14px;
+				font-family: 'Segoe UI', sans-serif;
+			}
+			.admin-side p {
+				font-size:14px;
+				font-family: 'Segoe UI', sans-serif;
+			}
+			.attachement{
+				background:#fff;
+				border:1px solid #ccc;
+				padding:0;
+				margin:0;
+				border-radius:2px;
+			}
+			.picture-holder{
+				border-radius:10px;
+				border:0;
+				height:200px;
+				margin-bottom:15px;
+				background-size:cover;
+			}
+			.reply textarea {
+				border:2px solid #c5eff7;
+				border-radius:3px;
+				transition:300 ms;
+			}
+			.reply textarea:focus {
+				border:2px solid #81cfe0;
+			}
+			.status {
+				color:#336e7b;
+				padding-left:0;
+			}
+			.admin-replies{
+				margin:10px 0px;
+				padding:0;
+			}
+			.admin-replies .reply{
+				background:#fff;
+				padding:13px 10px;
+				float:right;
+				width:90%;
+				border-radius:6px;
+				margin:2px 0;
+				font-family:'Segoe UI', Arial, sans-serif;
+			}
+			.reply-status {
+				color:#7f8c8d;
+			}
+			.ikibazo-side-widget {
+				background:#fff;
+				padding:10px;
+				margin:10px 0;
+			}
+			</style>
+			<div class="job-details">				
+				<div class="job-details-info">
+					<div class="row">
+						<div class="col-sm-9">
+							<div class="section job-description client-side">
+								<div class="description-info">
+									<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+									<div class="picture-large-holder col-md-12" style="padding:0;margin:0;">
+										<a href="{% static 'images/bg/Italy.jpg' %}" class="sb"><div class="picture-holder col-md-6" style='background-image:url("../static/images/bg/Italy.jpg");'>
+											<!-- <img src="{% static 'images/bg/1.jpg' %}" class="sb"> -->
+										</div></a>
+									</div>
+									<div class="reply form-group"><textarea class="form-control" placeholder="Tanga igitekerezo"></textarea><input type="submit" class="btn btn-primary btn-special-small pull-right clearfix" style="margin-top:5px;" value="Ohereza"/></div>
+									<!-- <div class="attachements col-md-12" style="padding:0;margin:0;">
+											<div class="attachement col-md-6" style="display:block !important;margin:5px 10px">
+													<div class="col-md-2" style="padding:5px;margin:0;background:#ccc;"><center><i class="fas fa-file-word" style='font-size:40px;color:#495057;'></i></center></div>
+													<div class="col-md-10"><big><b>Project Plan.docx</b></big> <br>1.1MB &bull; Word Document</div>
+											</div>
+											<div class="attachement col-md-6" style="display:block !important;margin:5px 10px">
+													<div class="col-md-2" style="padding:5px;margin:0;background:#ccc;"><center><i class="fas fa-file-excel" style='font-size:40px;color:#495057;'></i></center></div>
+													<div class="col-md-10"><big><b>Project Plan.docx</b></big> <br>0.9MB &bull; Excel Document</div>
+											</div>
+									</div> -->
+									<div>
+									<!-- <i class="far fa-comment-dots" style='font-size:14pt;color:#2980b9;'></i> &bull; -->
+									Mutabazi - Sat 17, Feb 2019, 9:00 PM | <i class="far fa-flag" style='font-size:14pt;color:#2980b9;'></i> &bull;  <i class="far fa-thumbs-up"  style='font-size:14pt;color:#2980b9;'></i> &bull; <i class="far fa-thumbs-down" style='font-size:14pt;color:#2980b9;'></i>
+									</div>
+								</div>					
+							</div>							
+							<div class="section job-description  admin-side">
+									<div class="description-info">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+										<!-- <div class="attachements col-md-12" style="padding:0;margin:0;">
+												<div class="attachement col-md-6" style="display:block !important;margin:5px 10px">
+														<div class="col-md-2" style="padding:5px;margin:0;background:#ccc;"><center><i class="fas fa-file-image" style='font-size:40px;color:#495057;'></i></center></div>
+														<div class="col-md-10"><big><b>Project Plan.docx</b></big> <br>1.1MB &bull; Image</div>
+												</div>
+										</div> -->
+										<div class="status col-md-12">Mutabazi - Sat 17, Feb 2019, 9:00 PM  | <i class="far fa-flag" style='font-size:14pt;color:#2980b9;'></i> &bull;  <i class="far fa-thumbs-up"  style='font-size:14pt;color:#2980b9;'></i> &bull; <i class="far fa-thumbs-down" style='font-size:14pt;color:#2980b9;'></i> &bull; <i class="fas fa-reply-all" style='font-size:14pt;color:#2980b9;'></i></div>
+									</div>	
+									<div class="admin-replies col-md-12">
+										<div class="reply">
+											Hahahahhahha!
+												<div class='reply-status text-right clearfix col-md-12'>
+													Mugisha Blaise &bull; <i class='far fa-flag'></i> &bull; <i class='far fa-thumbs-up'></i> &bull; <i class='far fa-thumbs-down'></i> &bull; <i class="fas fa-reply-all"></i> &bull; Sat 17, Feb
+												</div>
+									</div>
+										<div class="reply">Ariko n'ubwo mumuseka ari mukuri!
+												<div class='reply-status text-right clearfix col-md-12'>
+														Mugisha Blaise &bull; <i class='far fa-flag'></i> &bull; <i class='far fa-thumbs-up'></i> &bull; <i class='far fa-thumbs-down'></i> &bull; <i class="fas fa-reply-all"></i> &bull; Sat 17, Feb
+													</div>
+										</div>
+										<div class="reply">Reka Reka!
+												<div class='reply-status text-right clearfix col-md-12'>
+														Mugisha Blaise &bull; <i class='far fa-flag'></i> &bull; <i class='far fa-thumbs-up'></i> &bull; <i class='far fa-thumbs-down'></i> &bull; <i class="fas fa-reply-all"></i>  &bull; Sat 17, Feb
+													</div>
+										</div>
+									</div>				
+							</div>
+							<div class="section job-description client-side">
+									<div class="description-info">
+										<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+										<div class="status col-md-12">Mutabazi - Sat 17, Feb 2019, 9:00 PM | <i class="far fa-flag" style='font-size:14pt;color:#2980b9;'></i> &bull;  <i class="far fa-thumbs-up"  style='font-size:14pt;color:#2980b9;'></i> &bull; <i class="far fa-thumbs-down" style='font-size:14pt;color:#2980b9;'></i></div>
+									</div>					
+							</div>	
+							<div class="section job-description  admin-side">
+									<div class="description-info">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+									</div>					
+									<div class="status col-md-12"><span class="person-status">Mutabazi - Sat 17, Feb 2019, 9:00 PM </span> | <i class="far fa-flag" style='font-size:14pt;color:#2980b9;'></i> &bull;  <i class="far fa-thumbs-up"  style='font-size:14pt;color:#2980b9;'></i> &bull; <i class="far fa-thumbs-down" style='font-size:14pt;color:#2980b9;'></i></div>
+							</div>
+						</div>
+						<!-- Other Comments -->
+						<div class="col-md-3">
+							<h4><i class="fas fa-fire"></i> Ibyabajijwe Cyane</h4>
+							<div class="ikibazo-side-widget">
+								<h5 class="title">Nabuze akazi kandi ndakennye</h5>
+								<p>Ndakennye kandi nabuze akazi kandi ubuzima ntago bworoshye lorem ipsum dolor sit ammet... <a href="#">Komeza usome</a></p>
+							</div>
+							<div class="ikibazo-side-widget">
+								<h5 class="title">Nabuze akazi kandi ndakennye</h5>
+								<p>Ndakennye kandi nabuze akazi kandi ubuzima ntago bworoshye lorem ipsum dolor sit ammet... <a href="#">Komeza usome</a></p>
+							</div>
+						</div>
+					</div><!-- row -->					
+				</div><!-- job-details-info -->				
+			</div><!-- job-details -->
+		</div><!-- container -->
+	</section><!-- job-details-page -->
+	
+{% endblock %}

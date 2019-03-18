@@ -1,0 +1,235 @@
+
+{% extends "public/base.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+<style>
+.job-ad-item{
+	transition:300ms all;
+	cursor:pointer;
+}
+.job-ad-item:hover {
+	border-top:3px solid #2980b9;
+}
+.social-style-icon i {
+	font-size:120% !important;
+}
+.facebook i{
+	font-size:15pt;
+	color:#444;
+	transition: 300ms all;
+}
+.facebook i:hover{
+	color:#2980B9;
+}
+.twitter i{
+	font-size:15pt;
+	color:#444;
+	transition: 300ms all;
+}
+.twitter i:hover{
+	color:#3498db;
+}
+.whatsapp i{
+	font-size:15pt;
+	color:#444;
+	transition: 300ms all;
+}
+.whatsapp i:hover{
+	color:#2ecc71;
+}
+</style>
+	<div class="page">
+		<div class="container">
+            <br>
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <img src="{% static 'images/neutral-avatar.jpg' %}" style='position: relative;left:-20px;'>
+                    <h3>Mugisha Blaise <small><br>Joined on 3 March 2019</small></h3>
+                    <table>
+                        <tr>
+                            <td style='min-width:30px;'><i class="fas fa-mobile-alt" style='font-size:16pt;color:#2980b9;'></i></td>
+                            <td>+250 784 069 457</td>
+                        </tr>
+                        <tr>
+                            <td style='min-width:30px;'><i class="fas fa-envelope" style='font-size:16pt;color:#2980b9;'></i></td>
+                            <td>blaimug@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td style='min-width:30px;'><i class="fas fa-question-circle" style='font-size:16pt;color:#2980b9;'></i></td>
+                            <td>7 Questions</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <p>Umaze kubaza ibibazo 43. 21 byarakemuwe, hasigaye 22.</p>
+                </div>
+            </div>
+			<div class="section latest-jobs-ads col-md-9">
+				<div class="section-title tab-manu">
+					<h4>Reba Ibibazo Byawe</h4>
+					 <!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation"><a href="index.html#hot-jobs" data-toggle="tab"><i class="fas fa-user"></i> Ibyo wabajije</a></li>
+						<li role="presentation"  class="active"><a href="index.html#recent-jobs" data-toggle="tab"> <i class="fas fa-users"></i> Ibibazo byawe</a></li>
+						<!-- <li role="presentation" class="active"><a href="index.html#popular-jobs" data-toggle="tab">Popular Jobs</a></li> -->
+					</ul>
+				</div>
+
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in" id="hot-jobs">
+							<div class="job-ad-item">
+									<div class="item-info">
+										<div class="ad-dinfo">
+											<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+											<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye...</p></span>
+											<div class="ad-meta">
+												<ul>
+													<li><a href="index.html#"><i class="fas fa-users" aria-hidden="true"></i>1.1k</a></li>
+													<li><a href="index.html#"><i class="fas fa-comments" aria-hidden="true"></i>121</a></li>
+													<li><a href="index.html#"><i class="fas fa-eye" aria-hidden="true"></i>2.1k</a></li>
+													<li><a href="index.html#" style='position:relative;'><i class="fas fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+												</ul>
+											</div><!-- ad-meta -->
+										</div><!-- ad-info -->
+										<div class="button">
+											<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+										</div>
+									</div><!-- item-info -->
+								</div><!-- ad-item -->
+
+						<div class="job-ad-item">
+							<div class="item-info">
+								<div class="ad-dinfo">
+									<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+									<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye...</p></span>
+									<div class="ad-meta">
+										<ul>
+											<li><a href="index.html#"><i class="fa fa-users" aria-hidden="true"></i>1.1k</a></li>
+											<li><a href="index.html#"><i class="fa fa-comments" aria-hidden="true"></i>121</a></li>
+											<li><a href="index.html#"><i class="fa fa-eye" aria-hidden="true"></i>2.1k</a></li>
+											<li><a href="index.html#" ><i class="fa fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+										</ul>
+									</div><!-- ad-meta -->
+								</div><!-- ad-info -->
+								<div class="button">
+									<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+								</div>
+							</div><!-- item-info -->
+						</div><!-- ad-item -->
+
+						<div class="job-ad-item">
+								<div class="item-info">
+									<div class="ad-dinfo">
+										<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+										<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye...</p></span>
+										<div class="ad-meta">
+											<ul>
+												<li><a href="index.html#"><i class="fa fa-users" aria-hidden="true"></i>1.1k</a></li>
+												<li><a href="index.html#"><i class="fa fa-comments" aria-hidden="true"></i>121</a></li>
+												<li><a href="index.html#"><i class="fa fa-eye" aria-hidden="true"></i>2.1k</a></li>
+												<li><a href="index.html#" ><i class="fa fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+											</ul>
+										</div><!-- ad-meta -->
+									</div><!-- ad-info -->
+									<div class="button">
+										
+										<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+									</div>
+								</div><!-- item-info -->
+							</div><!-- ad-item -->
+							<div class="job-ad-item">
+									<div class="item-info">
+										<div class="ad-dinfo">
+											<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+											<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye...</p></span>
+											<div class="ad-meta">
+												<ul>
+													<li><a href="index.html#"><i class="fa fa-users" aria-hidden="true"></i>1.1k</a></li>
+													<li><a href="index.html#"><i class="fa fa-comments" aria-hidden="true"></i>121</a></li>
+													<li><a href="index.html#"><i class="fa fa-eye" aria-hidden="true"></i>2.1k</a></li>
+													<li><a href="index.html#" ><i class="fa fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+												</ul>
+											</div><!-- ad-meta -->
+										</div><!-- ad-info -->
+										<div class="button">
+											
+											<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+										</div>
+									</div><!-- item-info -->
+								</div><!-- ad-item -->
+					</div><!-- tab-pane -->
+
+					<div role="tabpanel" class="tab-pane fade in active" id="recent-jobs">
+
+							<div class="job-ad-item">
+									<div class="item-info">
+										<div class="ad-dinfo">
+											<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+											<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye pe...</p></span>
+											<div class="ad-meta">
+												<ul>
+													<li><a href="index.html#"><i class="fa fa-users" aria-hidden="true"></i>1.1k</a></li>
+													<li><a href="index.html#"><i class="fa fa-comments" aria-hidden="true"></i>121</a></li>
+													<li><a href="index.html#"><i class="fa fa-eye" aria-hidden="true"></i>2.1k</a></li>
+													<li><a href="index.html#" ><i class="fa fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+												</ul>
+											</div><!-- ad-meta -->
+										</div><!-- ad-info -->
+										<div class="button">
+											<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+										</div>
+									</div><!-- item-info -->
+								</div><!-- ad-item -->
+								<div class="job-ad-item">
+										<div class="item-info">
+											<div class="ad-dinfo">
+												<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+												<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye...</p></span>
+												<div class="ad-meta">
+													<ul>
+														<li><a href="index.html#"><i class="fa fa-users" aria-hidden="true"></i>1.1k</a></li>
+														<li><a href="index.html#"><i class="fa fa-comments" aria-hidden="true"></i>121</a></li>
+														<li><a href="index.html#"><i class="fa fa-eye" aria-hidden="true"></i>2.1k</a></li>
+														<li><a href="index.html#" ><i class="fa fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+													</ul>
+												</div><!-- ad-meta -->
+											</div><!-- ad-info -->
+											<div class="button">
+												
+												<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+											</div>
+										</div><!-- item-info -->
+									</div><!-- ad-item -->
+
+
+
+									<div class="job-ad-item">
+											<div class="item-info">
+												<div class="ad-dinfo">
+													<span><a href="/problem" class="title"><big>Nabuze akazi</big></a> &bull; Share on <a href="/fb-share" class="social-icon-style facebook"><i  class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="/twitter-share" class="social-icon-style twitter"><i  class="fa fa-twitter-square" aria-hidden="true"> </i> </a> <a href="/whatsapp-share" class="social-icon-style whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></span>
+													<span><p>Nabuze akazi nyuma yo kurangiza amashuri y'isumbuye akaba ari bwo natangiye kwiga imyuga ariko simbashe kugira icyo nageraho. Muri iyi minsi ntago biba byoroshye...</p></span>
+													<div class="ad-meta">
+														<ul> 
+															<li><a href="index.html#"><i class="fa fa-users" aria-hidden="true"></i>1.1k</a></li>
+															<li><a href="index.html#"><i class="fa fa-comments" aria-hidden="true"></i>121</a></li>
+															<li><a href="index.html#"><i class="fa fa-eye" aria-hidden="true"></i>2.1k</a></li>
+															<li><a href="index.html#" ><i class="fa fa-thumbs-up" aria-hidden="true"></i>69</a></li>
+														</ul>
+													</div><!-- ad-meta -->
+												</div><!-- ad-info -->
+												<div class="button">
+													<a href="/problem" class="btn btn-primary btn-special-small"><i class="fas fa-share"></i> Reba Ikibazo!</a>
+												</div>
+											</div><!-- item-info -->
+										</div><!-- ad-item -->
+					</div><!-- tab-pane -->
+				</div><!-- tab-content -->
+			</div><!-- trending ads -->
+
+		</div><!-- conainer -->
+	</div><!-- page -->
+
+	
+
+{% endblock %}

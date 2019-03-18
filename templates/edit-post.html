@@ -1,0 +1,91 @@
+
+{% extends "public/base.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<style>
+		.breadcrumb *{
+			color:#000 !important;
+		}
+</style>
+	<section class=" job-bg ad-details-page">
+		<div class="container">
+			<div class="breadcrumb-section">
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li><a href="index.html">Ahabanza</a></li>
+					<li>Tanga Ikibazo </li>
+				</ol><!-- breadcrumb -->						
+				<h2 class="title">Hindura Ikibazo</h2>
+			</div><!-- banner -->
+
+			<div class="job-postdetails">
+				<div class="row">	
+					<div class="col-md-8">
+						<form action="#">
+							<fieldset>
+								<div class="section postdetails">
+									<h4><i class="fas fa-edit"></i> Gira icyo uhindura ku kibazo cyawe<span class="pull-right">* Ni ngombwa</span></h4>			
+									<div class="row form-group">
+										<label class="col-sm-3">Ubwoko bw'Ikibazo<span class="required">*</span></label>
+										<div class="col-sm-9 user-type">
+											<input type="radio" name="sellType" value="full-time" id="full-time"> <label for="full-time">Ikibazo Rusange</label>
+											<input type="radio" name="sellType" value="part-time" id="part-time"> <label for="part-time">Ikibazo Bwite</label>
+										</div>
+									</div>
+									<div class="row form-group">
+										<label class="col-sm-3 label-title">Umutwe<span class="required">*</span></label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" placeholder="Urugero, Nabuze akazi nyuma y'amashuri" value="Nabuze akazi nyuma y'amashuri">
+										</div>
+									</div>					
+									<div class="row form-group item-description">
+										<label class="col-sm-3 label-title">Incamake<span class="required">*</span></label>
+										<div class="col-sm-9">
+											<textarea class="form-control" id="textarea" placeholder="Dusobanurire uko ikibazo cyawe giteye!" rows="8">Nabuze akazi nyuma y'amashuri y'isumbuye. Ntago biba byoroshye, umuryango wanjye nawo nta kazi ufite, mbese imimerere iba igoye. Noese nakora iki kugirango mumfashe kubona akazi koko? Murakoze (Ntuye Kimironko)</textarea>		
+										</div>
+									</div>
+									<div class="row characters">
+										<div class="col-sm-9 col-sm-offset-3">
+											<p>Amagambo 500</p>
+										</div>
+									</div>
+									<div class="row form-group">
+											<label class="col-sm-3">Ese abandi bakwifatanya?<span class="required">*</span></label>
+											<div class="col-sm-9 user-type">
+												<input type="radio" name="sellType" value="full-time" id="full-time"> <label for="full-time">Yego</label>
+												<input type="radio" name="sellType" value="part-time" id="part-time"> <label for="part-time">Oya</label>
+											</div>
+										</div>		
+								</div><!-- postdetails -->
+								
+								
+								<div class="checkbox section agreement">
+									<button type="submit" class="btn btn-primary btn-special">Hindura ikibazo cyawe</button>
+								</div><!-- section -->
+								
+							</fieldset>
+						</form><!-- form -->	
+					</div>
+				
+
+					<!-- quick-rules -->	
+					<div class="col-md-4">
+						<div class="section quick-rules">
+							<h4>Ibyibutswa</h4>
+							<p class="lead">Gutanga ikibazo ni ubuntu. Dore bimwe mu bishobora kugufasha:</p>
+
+							<ul>
+								<li>Niba ufite igihe gihagije, tubwire byinshi ku kibazo cyawe tugufashe</li>
+								<li>Niba udafite igihe kinini, ba utubajije ibishoboka, kuko nyuma yaho ushobora kugira ibyo wongera mu kibazo.</li>
+								<li>Mu gihe ikibazo cyawe gishobora gufasha abandi, kandi akaba atari ik'ibanga ushobora kwemera ko abandi bifatanya, cyangwa kikaba rusange, bigatuma dushakira umuti hamwe.</li>
+							</ul>
+						</div>
+					</div><!-- quick-rules -->	
+				</div><!-- photos-ad -->				
+			</div>	
+		</div><!-- container -->
+	</section><!-- main -->
+{% endblock %}
